@@ -27,7 +27,7 @@ public class LoginFunctionalTest {
 
 	@BeforeClass
 	public static void setup() {
-		driver = new ChromeDriver();
+		//driver = new ChromeDriver();
 		// new FirefoxDriver();
 				/*FirefoxBinary firefoxBinary = new FirefoxBinary();
         firefoxBinary.addCommandLineOptions("--headless");
