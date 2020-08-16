@@ -65,7 +65,7 @@
 		
   </dependencies>
   <build>
-    <finalName>ILP_Bookstore</finalName>
+    <finalName>MyBookstore</finalName>
 
 	<plugins>
 			<plugin>
