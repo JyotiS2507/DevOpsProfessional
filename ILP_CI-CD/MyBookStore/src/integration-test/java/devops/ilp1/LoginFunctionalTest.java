@@ -24,13 +24,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 @Category(IntegrationTest.class)
 public class LoginFunctionalTest {
-WebDriverManager.firefoxdriver().setup();
+
 	static WebDriver driver;
 
 	@BeforeClass
 	public static void setup() {
 		//driver = new ChromeDriver();
 		// new FirefoxDriver();
+		WebDriverManager.firefoxdriver().setup();
 				FirefoxBinary firefoxBinary = new FirefoxBinary();
         firefoxBinary.addCommandLineOptions("--headless");
         System.setProperty("webdriver.gecko.driver", "home/yetirajam/Desktop/work/jyoti/geckodriver");
