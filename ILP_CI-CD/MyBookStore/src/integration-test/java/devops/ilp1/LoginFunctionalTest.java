@@ -59,8 +59,8 @@ options.addArguments("--no-sandbox"); // Bypass OS security model
 
 	@Test
 	public void loginSuccess() {
-        //driver.get("http://localhost:6080/ILP_Bookstore");
-	driver.get("http://localhost:5050/ILP_Bookstore");
+        driver.get("http://localhost:6080/ILP_Bookstore");
+	//driver.get("http://localhost:5050/ILP_Bookstore");
         WebElement email = driver.findElement(By.name("email"));
         WebElement pass = driver.findElement(By.name("password"));
         WebElement button = driver.findElement(By.xpath("/html/body/form/div/button"));         
@@ -72,8 +72,8 @@ options.addArguments("--no-sandbox"); // Bypass OS security model
 	
 	//@Test
 	public void loginFail() {
-        //driver.get("http://localhost:6080/ILP_Bookstore");
-	driver.get("http://localhost:5050/ILP_Bookstore");
+        driver.get("http://localhost:6080/ILP_Bookstore");
+	//driver.get("http://localhost:5050/ILP_Bookstore");
         WebElement email = driver.findElement(By.name("email"));
         WebElement pass = driver.findElement(By.name("password"));
         WebElement button = driver.findElement(By.xpath("/html/body/form/div/button"));         
@@ -85,8 +85,8 @@ options.addArguments("--no-sandbox"); // Bypass OS security model
 	
 	@Test
 	public void registrationSuccess() {
-        //driver.get("http://localhost:6080/ILP_Bookstore/register.jsp");
-	driver.get("http://localhost:5050/ILP_Bookstore/register.jsp");
+        driver.get("http://localhost:6080/ILP_Bookstore/register.jsp");
+	//driver.get("http://localhost:5050/ILP_Bookstore/register.jsp");
         WebElement firstname = driver.findElement(By.name("firstname"));
         WebElement lastname = driver.findElement(By.name("lastname"));
         WebElement confirmpass = driver.findElement(By.name("confirmpass"));
@@ -104,8 +104,8 @@ options.addArguments("--no-sandbox"); // Bypass OS security model
 	
 	@Test
 	public void forgotPasswordSuccess() {
-        //driver.get("http://localhost:6080/ILP_Bookstore/forgotpassword.jsp");   
-	driver.get("http://localhost:5050/ILP_Bookstore/forgotpassword.jsp"); 
+        driver.get("http://localhost:6080/ILP_Bookstore/forgotpassword.jsp");   
+	//driver.get("http://localhost:5050/ILP_Bookstore/forgotpassword.jsp"); 
         WebElement confirmpass = driver.findElement(By.name("confirmpassword"));
         WebElement email = driver.findElement(By.name("email"));
         WebElement pass = driver.findElement(By.name("newpassword"));
