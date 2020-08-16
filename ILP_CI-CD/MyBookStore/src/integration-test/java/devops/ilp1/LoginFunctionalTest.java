@@ -29,15 +29,15 @@ public class LoginFunctionalTest {
 	public static void setup() {
 		//driver = new ChromeDriver();
 		// new FirefoxDriver();
-				FirefoxBinary firefoxBinary = new FirefoxBinary();
+				/*FirefoxBinary firefoxBinary = new FirefoxBinary();
         firefoxBinary.addCommandLineOptions("--headless");
         System.setProperty("webdriver.gecko.driver", "home/yetirajam/Desktop/work/jyoti/geckodriver");
         FirefoxOptions firefoxOptions = new FirefoxOptions();
         firefoxOptions.setBinary(firefoxBinary);
         
-        driver = new FirefoxDriver(firefoxOptions);
-	//System.setProperty("webdriver.chrome.driver","/home/yetirajam/Desktop/work/jyoti/chromedriver");  
-	//driver = new ChromeDriver();  
+        driver = new FirefoxDriver(firefoxOptions);*/
+	System.setProperty("webdriver.chrome.driver","/home/yetirajam/Desktop/work/jyoti/chromedriver");  
+	driver = new ChromeDriver();  
 	}
 
 	@AfterClass
