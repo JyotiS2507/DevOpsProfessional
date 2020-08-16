@@ -20,25 +20,26 @@ import static org.junit.Assert.*;
 import java.io.File;
 
 import org.junit.experimental.categories.Category;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 @Category(IntegrationTest.class)
 public class LoginFunctionalTest {
-
+WebDriverManager.firefoxdriver().setup();
 	static WebDriver driver;
 
 	@BeforeClass
 	public static void setup() {
 		//driver = new ChromeDriver();
 		// new FirefoxDriver();
-				/*FirefoxBinary firefoxBinary = new FirefoxBinary();
+				FirefoxBinary firefoxBinary = new FirefoxBinary();
         firefoxBinary.addCommandLineOptions("--headless");
         System.setProperty("webdriver.gecko.driver", "home/yetirajam/Desktop/work/jyoti/geckodriver");
         FirefoxOptions firefoxOptions = new FirefoxOptions();
         firefoxOptions.setBinary(firefoxBinary);
         
-        driver = new FirefoxDriver(firefoxOptions);*/
-	System.setProperty("webdriver.chrome.driver","/home/yetirajam/Desktop/work/jyoti/chromedriver"); 
-		ChromeOptions options = new ChromeOptions();
+        driver = new FirefoxDriver(firefoxOptions);
+	//System.setProperty("webdriver.chrome.driver","/home/yetirajam/Desktop/work/jyoti/chromedriver"); 
+		//ChromeOptions options = new ChromeOptions();
 /*options.addArguments("start-maximized"); // open Browser in maximized mode
 options.addArguments("disable-infobars"); // disabling infobars
 options.addArguments("--disable-extensions"); // disabling extensions
@@ -46,8 +47,8 @@ options.addArguments("--disable-gpu"); // applicable to windows os only
 options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 options.addArguments("--no-sandbox"); // Bypass OS security model
 		options.addArguments("--headless"); */
-		options.setExperimentalOption("useAutomationExtension", false);
-	driver = new ChromeDriver(options);  
+		//options.setExperimentalOption("useAutomationExtension", false);
+	//driver = new ChromeDriver(options);  
 	}
 
 	@AfterClass
